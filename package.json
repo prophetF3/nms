@@ -1,0 +1,21 @@
+{
+    "name": "nms_monitor",
+    "version": "0.0.1",
+    "description": "nms for ap mesh",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "dev": "supervisor -e 'js' index.js",
+        "debug": "supervisor -e 'js' -- --debug index.js",
+        "start": "node index.js"
+    },
+    "author": "Leandro Delgado",
+    "license": "ISC",
+    "dependencies": {
+        "redis": "^0.12.1",
+        "restify": "^2.8.2",
+        "snmp-native": "^1.0.17",
+        "net-snmp": "^1.1.13",
+        "jquery": "2.1.1"
+    }
+}
